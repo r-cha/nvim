@@ -21,12 +21,17 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 -- Q is cancelled
 vim.keymap.set("n", "Q", "<nop>")
 
+-- Format things
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+-- ?
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- Automatically make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+-- hover docs under cursor, or fund docs of function I'm calling.
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
 vim.keymap.set("i", "<C-h>", function () vim.lsp.buf.signature_help() end, opts)
 
+-- This doesn't work as far as I can tell
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
