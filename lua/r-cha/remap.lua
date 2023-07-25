@@ -27,7 +27,7 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- Automatically make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
--- hover docs under cursor, or fund docs of function I'm calling.
+-- hover docs under cursor, or find docs of function I'm calling.
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
 vim.keymap.set("i", "<C-h>", function () vim.lsp.buf.signature_help() end, opts)
 
