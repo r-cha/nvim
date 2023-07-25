@@ -34,6 +34,7 @@ Note: `_` means `<leader>` which for me is `' '`.
 ### netrw
 
 | keys | effect |
+| --- | --- |
 | % | new file |
 | d | new directory |
 
@@ -41,7 +42,9 @@ Note: `_` means `<leader>` which for me is `' '`.
 
 Mode is `normal` if unspecified.
 
+
 | mode | keys | effect |
+| --- | --- | --- |
 || `_pv` | open filebrowser |
 || `_f` | format |
 || k | hover help |
@@ -53,12 +56,13 @@ Mode is `normal` if unspecified.
 || `_ps` | find string |
 || `_a` | add to harpoon |
 || `Ctrl-e` | see harpoon |
-|| `Ctrl-``h`/`j`/`k`/`l` | harpoon to 1/2/3/4 |
+|| `Ctrl-h`/`j`/`k`/`l` | harpoon to 1/2/3/4 |
 || `_gs` | git stuff |
 
 ### WANT
 
 |key|effect|
+| --- | --- |
 | `Ctrl-b` | filebrowser |
 | `Ctrl-F` | string search |
 | `Ctrl-t` | symbol search |
