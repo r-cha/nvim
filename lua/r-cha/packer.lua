@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
 	}
 
 	use( 'shatur/neovim-ayu' )
+    use( 'gbprod/nord.nvim' )
 	use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } )
 	use( 'theprimeagen/harpoon' )
 	use( 'mbbill/undotree' )
