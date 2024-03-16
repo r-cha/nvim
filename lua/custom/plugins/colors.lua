@@ -1,9 +1,12 @@
 return {
     "shatur/neovim-ayu",
     config = function()
+        local colors = require('ayu.colors')
+        colors.generate(true)
         require('ayu').setup({
             mirage = true,
             overrides = {
+                LineNr = { fg = colors.fg },
                 Normal = { bg = "None" },
                 ColorColumn = { bg = "None" },
                 SignColumn = { bg = "None" },
